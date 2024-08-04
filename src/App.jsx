@@ -4,10 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   const incrementer =()=> setCount(count +1);
   const decrementer =()=> setCount(count -1);
   const reseter =()=> setCount( 0);
+  
   return (
     <>
       <div className="title-container">
