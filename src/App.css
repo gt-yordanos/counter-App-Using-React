@@ -1,0 +1,72 @@
+
+.title-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-container img {
+  height: 2em;
+  margin-left: 0.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.counter-card{
+  background-color: hsl(0, 0%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.counter-card .button-container{
+  display: flex;
+  gap: 15px;
+}
+
+.counter-card button{
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0.1em;
+  border: none;
+  color: rgb(4, 0, 33);
+  cursor: pointer;
+}
+
+.counter-card span{
+  font-size: 3.5em;
+}
+
+.decrement{
+  background: #f8efc9;
+}
+
+.reset{
+  background: #f5b5b5;
+}
+
+.increment{
+  background: #d1c7f0;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .title-container img {
+    animation: logo-spin infinite 5s linear;
+  }
+}
+
+
+
